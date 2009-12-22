@@ -22,6 +22,14 @@ class DesktopManifest < ShadowPuppet::Manifest
   # Development
   include GeneralDevelopmentPuppet
   recipe :general_development
+
+  include ScmPuppet
+  recipe :git
+  recipe :svn
+  recipe :mercurial
+  recipe :bzr
+  recipe :cvs
+  recipe :darcs
   
   include RubyPuppet
   recipe :ruby

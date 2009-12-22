@@ -3,7 +3,6 @@ Missing items
 * Ruby gems
 * Desktop config
 * Office utilities
-* scm tools
 * unix tools (e.g. screen)
 * MySQL
 * Postgres
