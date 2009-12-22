@@ -4,7 +4,6 @@ Missing items
 * Ruby package libraries
 * Ruby gems
 * Desktop config
-* Wmii
 * Office utilities
 * scm tools
 * unix tools (e.g. screen)

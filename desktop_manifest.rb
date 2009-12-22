@@ -15,6 +15,9 @@ class DesktopManifest < ShadowPuppet::Manifest
 
   include SystemToolsPuppet
   recipe :system_tools
+
+  include X11Puppet
+  recipe :wmii
 end
 
 m = DesktopManifest.new
