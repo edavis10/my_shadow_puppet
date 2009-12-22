@@ -6,6 +6,6 @@ module SqlitePuppet
 
   def sqlite_ruby
     package "libsqlite3-dev", :ensure => :installed
-    gem "sqlite3-ruby", :ensure => :installed
+    package "sqlite3-ruby", :provider => :gem, :ensure => :installed
   end
 end
