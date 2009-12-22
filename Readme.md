@@ -1,7 +1,5 @@
 Missing items
 
-* Ruby
-* Ruby package libraries
 * Ruby gems
 * Desktop config
 * Office utilities

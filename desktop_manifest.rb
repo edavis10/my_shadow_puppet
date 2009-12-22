@@ -19,6 +19,13 @@ class DesktopManifest < ShadowPuppet::Manifest
   include X11Puppet
   recipe :wmii
 
+  # Development
+  include GeneralDevelopmentPuppet
+  recipe :general_development
+  
+  include RubyPuppet
+  recipe :ruby
+  
   include SqlitePuppet
   recipe :sqlite
   recipe :sqlite_ruby
