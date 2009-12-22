@@ -16,6 +16,10 @@ class DesktopManifest < ShadowPuppet::Manifest
   include SystemToolsPuppet
   recipe :system_tools
 
+  include SshPuppet
+  recipe :ssh_client
+  recipe :ssh_server
+
   include X11Puppet
   recipe :wmii
 
