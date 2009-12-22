@@ -8,7 +8,6 @@ Missing items
 * scm tools
 * unix tools (e.g. screen)
 * MySQL
-* Sqlite3
 * Postgres
 * Apache
 * Passenger

@@ -18,6 +18,10 @@ class DesktopManifest < ShadowPuppet::Manifest
 
   include X11Puppet
   recipe :wmii
+
+  include SqlitePuppet
+  recipe :sqlite
+  recipe :sqlite_ruby
 end
 
 m = DesktopManifest.new
