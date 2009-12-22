@@ -11,5 +11,4 @@ Missing items
 * Google Chrome
 * Firefox
 * Adobe AIR
-* claws-mail
 

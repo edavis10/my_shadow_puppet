@@ -19,6 +19,9 @@ class DesktopManifest < ShadowPuppet::Manifest
   include X11Puppet
   recipe :wmii
 
+  include EmailClientPuppet
+  recipe :claws_mail
+  
   # Development
   include GeneralDevelopmentPuppet
   recipe :general_development
