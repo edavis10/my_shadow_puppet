@@ -30,6 +30,10 @@ class DesktopManifest < ShadowPuppet::Manifest
   recipe :postgres_gui
   recipe :postgres_server
 
+  include ApachePuppet
+  recipe :apache
+  recipe :passenger
+
   include X11Puppet
   recipe :xbindkeys
   recipe :wmii

@@ -4,7 +4,6 @@ Missing items
 * Desktop config
 * Office utilities
 * unix tools (e.g. screen)
-* Apache
 * Passenger
 * Google Chrome
 * Firefox
