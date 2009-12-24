@@ -25,6 +25,11 @@ class DesktopManifest < ShadowPuppet::Manifest
   recipe :mysql_client
   recipe :mysql_server
   
+  include PostgresPuppet
+  recipe :postgres_client
+  recipe :postgres_gui
+  recipe :postgres_server
+
   include X11Puppet
   recipe :xbindkeys
   recipe :wmii
