@@ -8,4 +8,8 @@ module SshPuppet
 
     service "ssh", :require => package('openssh-server'), :restart => '/etc/init.d/ssh restart', :ensure => :running
   end
+
+  def ssh_keychain
+    package 'keychain', :ensure => :latest
+  end
 end

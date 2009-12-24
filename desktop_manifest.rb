@@ -19,7 +19,8 @@ class DesktopManifest < ShadowPuppet::Manifest
   include SshPuppet
   recipe :ssh_client
   recipe :ssh_server
-
+  recipe :ssh_keychain
+  
   include X11Puppet
   recipe :xbindkeys
   recipe :wmii
