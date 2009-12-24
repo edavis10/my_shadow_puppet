@@ -32,7 +32,6 @@ class DesktopManifest < ShadowPuppet::Manifest
 
   include ApachePuppet
   recipe :apache
-  recipe :passenger
 
   include X11Puppet
   recipe :xbindkeys
@@ -40,6 +39,9 @@ class DesktopManifest < ShadowPuppet::Manifest
 
   include EmailClientPuppet
   recipe :claws_mail
+
+  include OfficePuppet
+  recipe :general_office
   
   # Development
   include GeneralDevelopmentPuppet

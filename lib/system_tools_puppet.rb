@@ -4,7 +4,10 @@ module SystemToolsPuppet
      'htop',
      'less',
      'synergy',
-     'screen'
+     'screen',
+     'bzip2',
+     'markdown',
+     'sshfs'
     ].each do |pkg|
       package pkg, :ensure => :latest
     end
