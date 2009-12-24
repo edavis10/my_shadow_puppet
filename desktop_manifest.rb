@@ -21,6 +21,7 @@ class DesktopManifest < ShadowPuppet::Manifest
   recipe :ssh_server
 
   include X11Puppet
+  recipe :xbindkeys
   recipe :wmii
 
   include EmailClientPuppet
