@@ -20,6 +20,10 @@ class DesktopManifest < ShadowPuppet::Manifest
   recipe :ssh_client
   recipe :ssh_server
   recipe :ssh_keychain
+
+  include MysqlPuppet
+  recipe :mysql_client
+  recipe :mysql_server
   
   include X11Puppet
   recipe :xbindkeys
