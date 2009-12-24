@@ -57,6 +57,7 @@ class DesktopManifest < ShadowPuppet::Manifest
   
   include RubyPuppet
   recipe :ruby
+  recipe :core_rubygems
   
   include SqlitePuppet
   recipe :sqlite

@@ -1,6 +1,7 @@
 module PostgresPuppet
   def postgres_client
     package 'postgresql-client-8.4', :ensure => :latest
+    package 'postgres', :provider => :gem, :ensure => :latest
   end
 
   def postgres_server
