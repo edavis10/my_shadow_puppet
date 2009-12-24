@@ -3,7 +3,8 @@ module SystemToolsPuppet
     [
      'htop',
      'less',
-     'synergy'
+     'synergy',
+     'screen'
     ].each do |pkg|
       package pkg, :ensure => :latest
     end
