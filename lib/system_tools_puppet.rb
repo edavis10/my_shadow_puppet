@@ -7,7 +7,9 @@ module SystemToolsPuppet
      'screen',
      'bzip2',
      'markdown',
-     'sshfs'
+     'sshfs',
+     'tree',
+     'x11-xkb-utils'
     ].each do |pkg|
       package pkg, :ensure => :latest
     end
