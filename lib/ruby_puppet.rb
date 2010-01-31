@@ -9,6 +9,14 @@ module RubyPuppet
 
     package "libopenssl-ruby", :ensure => :latest
     package "libxml-ruby", :ensure => :latest
+    # Nokogiri
+    package "libxml2-dev", :ensure => :latest
+    package "libxslt1-dev", :ensure => :latest
+
+    package 'libpq-dev', :ensure => :latest
+
+    package 'libaspell-dev', :ensure => :latest
+    package 'libonig-dev', :ensure => :latest
   end
 
   def core_rubygems
@@ -36,7 +44,7 @@ module RubyPuppet
       'hpricot' => [:latest],
       'httparty' => [:latest],
       'jeweler' => [:latest],
-      'inherited_resurces' => [:latest],
+      'josevalim-inherited_resources' => [:latest],
       'metric_fu' => [:latest],
       'json' => [:latest],
       'formtastic' => [:latest],
@@ -98,7 +106,8 @@ module RubyPuppet
       'ZenTest' => [:latest],
       'authlogic' => [:latest],
       'autotest-rails' => [:latest],
-      'searchlogic' => [:latest]
+      'searchlogic' => [:latest],
+      'relevance-rcov' => [:latest]
     }.each do |gem_name, versions|
       versions.each do |version|
 
